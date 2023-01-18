@@ -11,7 +11,7 @@ handleLogin = () => {
 }).then(data => {console.log(data)})
 }
 
-body.onload = function() {
+document.body.onload = function() {
     let paramString = urlString.split('?')[1];
     let queryString = new URLSearchParams(paramString);
 
