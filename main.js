@@ -5,7 +5,7 @@ handleLogin = () => {
     fetch("https://github.com/login/oauth/authorize",{
         method: 'GET',
         headers: headers,
-        mode: 'cors'
+        mode: 'no-cors'
     }).then(data => {
     console.log(data)
 })
