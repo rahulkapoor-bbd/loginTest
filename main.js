@@ -13,7 +13,7 @@ handleLogin = () => {
 
 onBodyLoad = () => {
     console.log("HIT!")
-    let paramString = urlString.split('?')[1];
+    let paramString = window.location.href.split('?')[1];
     let queryString = new URLSearchParams(paramString);
 
     for (let pair of queryString.entries()) {
