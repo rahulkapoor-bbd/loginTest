@@ -24,7 +24,8 @@ onBodyLoad = () => {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
             },
             body: JSON.stringify({ "client_id": "fd064980a8a92a69b281",
                                     "client_secret": "fee177ef5644ef37b319ac177b88a6c68f2e1ace",
