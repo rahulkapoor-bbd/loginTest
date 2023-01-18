@@ -10,6 +10,6 @@ handleLogin = () => {
         mode: 'cors',
         client_id: 'fd064980a8a92a69b281'
     }).then(data => {
-    console.log(data)
-})
+    return data.json()
+}).then(data => {console.log(data)})
 }
