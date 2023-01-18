@@ -11,7 +11,7 @@ handleLogin = () => {
 }).then(data => {console.log(data)})
 }
 
-onBodyLoad = function() {
+onBodyLoad = () => {
     let paramString = urlString.split('?')[1];
     let queryString = new URLSearchParams(paramString);
 
